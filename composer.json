@@ -1,0 +1,20 @@
+{
+  "name": "roundpartner/php-valid-json",
+  "description": "PHP Valid JSON",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tom Lorentsen",
+      "email": "tom@roundpartner.co.uk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Parse\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  }
+}

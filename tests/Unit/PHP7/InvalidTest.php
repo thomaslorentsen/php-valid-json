@@ -8,7 +8,7 @@ class InvalidTest extends \PHPUnit_Framework_TestCase
     public function testEmpty()
     {
         $parser = new Parse\Json();
-        $parser->decode('""');
+        $parser->decode('');
     }
 
     /**

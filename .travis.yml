@@ -22,4 +22,7 @@ install:
 
 script:
   - vendor/bin/phpunit --testdox
+
+after_failure:
+  - vendor/bin/phpunit
 ...

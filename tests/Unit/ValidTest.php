@@ -11,7 +11,8 @@ class ValidTest extends \PHPUnit_Framework_TestCase
     public function testNull()
     {
         $parser = new Parse\Json();
-        $parser->decode(null);
+        $result = $parser->decode(null);
+        $this->assertNull($result);
     }
 
     public function testString()

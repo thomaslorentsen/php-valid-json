@@ -8,13 +8,6 @@ class ValidTest extends \PHPUnit_Framework_TestCase
         $parser->decode('{"hello":"world"}');
     }
 
-    public function testNull()
-    {
-        $parser = new Parse\Json();
-        $result = $parser->decode(null);
-        $this->assertNull($result);
-    }
-
     public function testString()
     {
         $parser = new Parse\Json();

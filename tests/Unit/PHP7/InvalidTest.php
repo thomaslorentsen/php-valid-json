@@ -2,6 +2,17 @@
 
 class InvalidTest extends \PHPUnit_Framework_TestCase
 {
+
+    public function testNull()
+    {
+        if ('7' === $this->getPHPVersion()) {
+            $this->setExpectedException('Exception', 'Syntax error');
+        }
+        $parser = new Parse\Json();
+        $result = $parser->decode(null);
+        $this->assertNull($result);
+    }
+
     /**
      * @see http://php.net/manual/en/migration70.incompatible.php#migration70.incompatible.other.json-to-jsond
      */
